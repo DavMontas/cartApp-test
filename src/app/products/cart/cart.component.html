@@ -1,0 +1,21 @@
+<nav class="navbar">
+    <div class="container-fluid">
+        <ul class="navbar nav">
+
+            <a  routerLink="" class="nav-link">Product</a>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <h2>Carrito de compras</h2>
+    <div class="card m-3" *ngFor="let product of listado">
+        <div class="card-header ">
+            <img src="product.thumbnailUrl" alt="">
+        </div>
+        <div class="card-body">
+            <p>{{ product.title }}</p>
+            <button class="btn btn-primary" >Add</button>
+        </div>
+    </div>
+</div>
